@@ -13,11 +13,11 @@ StreamReassembler::StreamReassembler(const size_t capacity)
     : _output(capacity), _capacity(capacity), _index(0), _aux_vec(), _eof(false) {}
 
 void StreamReassembler::push_to_aux(const string &data, const size_t index, const bool eof) {
-    // 若出现 eof，则标记 private member: _eof
-    if (!_eof && eof)
-        _eof = !_eof;
-    if(data == "")
-        return;
+    // 若出现 eof，则标记 _eof
+    if (!_eof && eof) _eof = !_eof;
+    // 如果字符串为空，则没有必要再压入辅助空间
+    if(data == "") return;
+    // 创建该 substring 的 substr 结构体，方便下面某些情况下直接插入
     struct substr elem;
     elem.index_start = index;
     elem.s = data;  // 这里是深拷贝吗？应该是深拷贝
@@ -25,12 +25,15 @@ void StreamReassembler::push_to_aux(const string &data, const size_t index, cons
     // 遍历以寻找最佳插入点
     size_t i = 0;
     for (; i < _aux_vec.size(); i++) {
-        if (index + data.size() < _aux_vec[i].index_start) {  // 整个在当前 substr 之前（无任何重叠）
+        if (index + data.size() < _aux_vec[i].index_start) {
+            // 整个在当前 substr 之前（无任何重叠）
             _aux_vec.insert(_aux_vec.begin() + i, elem);
             break;
-        } else if (index > _aux_vec[i].index_start + _aux_vec[i].s.size())  // 整个在当前 substr 之后（无任何重叠）
+        } else if (index > _aux_vec[i].index_start + _aux_vec[i].s.size())  
+            // 整个在当前 substr 之后（无任何重叠）
             continue;
-        else {  // 与当前 substr 有重叠
+        else {  
+            // 与当前 substr 有重叠
             if (_aux_vec[i].index_start < index) {
                 if (_aux_vec[i].index_start + _aux_vec[i].s.size() < index + data.size())
                     _aux_vec[i].s = _aux_vec[i].s + data.substr(_aux_vec[i].index_start + _aux_vec[i].s.size() - index);
@@ -44,12 +47,9 @@ void StreamReassembler::push_to_aux(const string &data, const size_t index, cons
             break;
         }
     }
-
     // 如果遍历后仍然找不到插入点，就直接放入 _aux_vec 的末尾
-    if (i == _aux_vec.size()) {
+    if (i == _aux_vec.size())
         _aux_vec.push_back(elem);
-        return;
-    }
 
     // 将 index 有重合的 _aux_vec 进行整合
     struct substr &item = _aux_vec[i];
@@ -61,6 +61,26 @@ void StreamReassembler::push_to_aux(const string &data, const size_t index, cons
             iter = _aux_vec.erase(iter);  // 返回指向下一个元素的迭代器
         } else
             break;
+    }
+
+    // 删去超出 _capacity 的那部分字符串
+    size_t total_bytes_in_auxspace = unassembled_bytes();
+    if(total_bytes_in_auxspace > _capacity){
+        // _eof 标志位失效
+        if (eof) _eof = !_eof;
+        iter = _aux_vec.end() - 1;
+        size_t bytes_need_delete = total_bytes_in_auxspace - _capacity;
+        while (1){
+            size_t curr_substring_size = iter->s.size();
+            if (bytes_need_delete < curr_substring_size){
+                iter->s = iter->s.substr(0, curr_substring_size-bytes_need_delete);
+                break;
+            } else {
+                _aux_vec.erase(iter);
+                iter--;
+                bytes_need_delete -= curr_substring_size;
+            }   
+        }  
     }
 }
 
@@ -79,11 +99,9 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
         data_ = "";
         index_ = 0;
     }
-    // 考虑 _capacity，将 substring 压入辅助空间
-    if (unassembled_bytes() + data_.size() > _capacity) //这样不能够保证吸纳的 data 是最长的，因为可能会与辅助空间中的项目有重复
-        push_to_aux(data_.substr(0, _capacity-unassembled_bytes()), index_, eof);
-    else
-        push_to_aux(data_, index_, eof);
+
+    // 将 substring 压入辅助空间
+    push_to_aux(data_, index_, eof);
 
     // reassemble
     std::vector<substr>::iterator iter = _aux_vec.begin();
@@ -98,29 +116,23 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
                 iter = _aux_vec.erase(iter);
             _index += written_size;
             break;
-        } else if (_index >= iter->index_start + iter->s.size())  // index 在该项之后，则丢弃这一项，查看下一项是否符合
+        } else if (_index >= iter->index_start + iter->s.size())  
+            // index 在该项之后，则丢弃这一项，查看下一项是否符合
             iter = _aux_vec.erase(iter);
-        else  // index 在两项之间（或者在第一项之前）
-            break;
+        else break; // index 在两项之间（或者在第一项之前）
     }
 
     // 如果辅助空间已经 empty 且 _eof 标志位已经被置上，就结束 reassemble
-    if (_aux_vec.size() == 0 && _eof) {
-        _output.end_input();
-    }
+    if (_aux_vec.size() == 0 && _eof) _output.end_input();
 }
 
 size_t StreamReassembler::unassembled_bytes() const {
     size_t total = 0;
-    for (size_t i = 0; i < _aux_vec.size(); i++) {
+    for (size_t i = 0; i < _aux_vec.size(); i++)
         total += _aux_vec[i].s.size();
-    }
     return total;
 }
 
 bool StreamReassembler::empty() const {
-    if (_aux_vec.size() == 0)
-        return true;
-    else
-        return false;
+    if (_aux_vec.size() == 0) return true; else return false;
 }

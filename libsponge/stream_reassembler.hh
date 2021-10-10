@@ -21,10 +21,10 @@ class StreamReassembler {
 
     ByteStream _output;  //!< The reassembled in-order byte stream
     size_t _capacity;    //!< The maximum number of bytes
-    size_t _index;       // first unassembled
-    std::vector<substr> _aux_vec;
-    bool _eof;
-    void push_to_aux(const string &data, const size_t index, const bool eof);
+    size_t _index;       //!< first unassembled
+    std::vector<substr> _aux_vec;   //!> auxiliary storage space
+    bool _eof;    //!> eof marker
+    void push_to_aux(const string &data, const size_t index, const bool eof); //!< push substring into _aux_vec
 
   public:
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.
