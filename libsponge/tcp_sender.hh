@@ -9,6 +9,48 @@
 #include <functional>
 #include <queue>
 
+
+class Timer {
+  private:
+    unsigned int _rto;
+    size_t _ticks;
+    bool _start;
+  public:
+    Timer(unsigned int _initial_retransmission_timeout)
+      :_rto(_initial_retransmission_timeout)
+      , _ticks(0)
+      , _start(false) {}
+
+    void increase(const size_t ms_since_last_tick) {_ticks += ms_since_last_tick;}
+
+    void start() {
+      _start = true;
+      _ticks = 0;
+    }
+
+    void close() {
+      _start = false;
+      _ticks = 0;
+    }
+
+    void restart() {_ticks = 0;}
+
+    bool is_started() {return _start;}
+
+    bool is_expired() {return _ticks >= _rto;}
+
+    unsigned int &rto() { return _rto; }
+
+    unsigned int ticks() {return _ticks;}
+};
+
+struct OutstandingSegment {
+  TCPSegment seg;
+  uint64_t biggest_absolute_seqno;
+  OutstandingSegment(): seg(), biggest_absolute_seqno(0) {}
+};
+
+
 //! \brief The "sender" part of a TCP implementation.
 
 //! Accepts a ByteStream, divides it up into segments and sends the
@@ -31,6 +73,30 @@ class TCPSender {
 
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
+
+    //! 接收者需要的下一个 absolute sequence number
+    uint64_t _ack_seqno{0};
+
+    //! 可以发送的窗口大小（序列空间的序列数）
+    uint16_t _window_size{0};
+
+    //! 已经发送但并未被承认接收的 segments
+    std::vector<OutstandingSegment> _out_segs{};
+
+    //! 在 _out_segs 中的序列数
+    uint64_t _out_seqnos{0};
+
+    //! 重传次数
+    unsigned int _consecutive_retransmissions{0};
+
+    //! 计时器
+    Timer _timer;
+  
+    //! 是否发出过带有 syn 的 TCPSegment，发出过就不用再发了（顶多重传）
+    bool _syn_sent{false};
+
+    //! 是否发出过带有 fin 的 TCPSegment，发出过就不用再发了（顶多重传）
+    bool _fin_sent{false};
 
   public:
     //! Initialize a TCPSender

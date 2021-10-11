@@ -93,6 +93,9 @@ int main() {
                 test.execute(ExpectNoSegment{});
             }
             test.execute(ExpectBytesInFlight{bytes_sent});
+            // for(int i=0; i<100 ; i++){
+            //     std::cout << "adsdsad";
+            // }
             test.execute(AckReceived{WrappingInt32{isn + 1 + uint32_t(bytes_sent)}});
             test.execute(ExpectBytesInFlight{0});
         }

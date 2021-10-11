@@ -88,6 +88,9 @@ int main() {
             test.execute(ExpectSegment{}.with_no_flags().with_syn(true).with_payload_size(0).with_seqno(isn));
             test.execute(AckReceived{WrappingInt32{isn + 1}}.with_win(7));
             test.execute(ExpectNoSegment{});
+            // for(int i=0; i<100; i++){
+            //     std::cout << "sd" << std::endl;
+            // }
             test.execute(WriteBytes{"1234567"});
             test.execute(Close{});
             test.execute(ExpectSegment{}.with_no_flags().with_data("1234567"));
