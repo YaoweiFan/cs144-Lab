@@ -25,9 +25,12 @@ TCPSender::TCPSender(const size_t capacity, const uint16_t retx_timeout, const s
 uint64_t TCPSender::bytes_in_flight() const { return _out_seqnos; }
 
 void TCPSender::fill_window() {
+    // Impossible ackno (beyond next seqno) is ignored
+    if(_next_seqno < _ack_seqno && _syn_sent)
+        return;
     uint16_t ws = _window_size;
     // 如果窗口不足以填入下一个要发送的字节，则什么都不做，除非需要接受的字节恰好就是下一个要发送的字节
-    if(_window_size <= (_next_seqno - _ack_seqno)){
+    if(_window_size <= (_next_seqno - _ack_seqno) && _syn_sent ){
         if(_next_seqno == _ack_seqno)
             ws = 1; 
         else
@@ -81,6 +84,9 @@ void TCPSender::fill_window() {
 void TCPSender::ack_received(const WrappingInt32 ackno, const uint16_t window_size) {
     _ack_seqno = unwrap(ackno, _isn, _next_seqno); // 下一个需要发送的字节序号
     _window_size = window_size;
+    // Impossible ackno (beyond next seqno) is ignored
+    if(_next_seqno < _ack_seqno)
+        return;
     vector<OutstandingSegment>::iterator iter = _out_segs.begin();
     size_t size_of_out_segs = _out_segs.size();
     while(iter != _out_segs.end()){
@@ -130,8 +136,8 @@ unsigned int TCPSender::consecutive_retransmissions() const { return _consecutiv
 void TCPSender::send_empty_segment() {
     // 创建 TCPSegment
     TCPSegment seg;
-    // seg.header().seqno = wrap(, _isn);
-
+    // 装入合适的序列号
+    seg.header().seqno = wrap(_next_seqno, _isn);
     // 发送 TCPSegment
     _segments_out.push(seg);
 }

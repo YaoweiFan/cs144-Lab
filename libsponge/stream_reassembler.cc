@@ -99,6 +99,8 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
         data_ = "";
         index_ = 0;
     }
+    if(_index + _capacity <= index)
+        return;
 
     // 将 substring 压入辅助空间
     push_to_aux(data_, index_, eof);
