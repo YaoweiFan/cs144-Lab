@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/libsponge/**"
+            ]
+        }
+    ],
+    "version": 4
+}

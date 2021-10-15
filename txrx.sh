@@ -163,10 +163,10 @@ exit_cleanup () {
 ip link show tun144 &>/dev/null || { echo "please enable tun144 and re-run"; exit 1; }
 ip link show tun145 &>/dev/null || { echo "please enable tun145 and re-run"; exit 1; }
 
-set -u
-trap exit_cleanup EXIT
+set -u  # 当执行时使用到未定义过的变量，则显示错误信息。
+trap exit_cleanup EXIT # 前shell进程接收到EXIT信号时，执行exit_cleanup
 
-get_cmdline_options "$@"
+get_cmdline_options "$@" # $@: 传入脚本的所有参数
 
 . "$(dirname "$0")"/etc/tunconfig
 REF_HOST=${TUN_IP_PREFIX}.144.1

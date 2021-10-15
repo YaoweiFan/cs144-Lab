@@ -20,7 +20,7 @@ void TCPReceiver::segment_received(const TCPSegment &seg) {
             index = 0;
         else
             index = unwrap(seg.header().seqno, _isn, _reassembler.stream_out().bytes_written()+1) - 1;
-        // std::cout << seg.payload().copy() << std::endl;
+        
         _reassembler.push_substring(seg.payload().copy(), index, seg.header().fin);
     }
 }

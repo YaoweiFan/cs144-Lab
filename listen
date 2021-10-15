@@ -1,0 +1,679 @@
+DEBUG: Listening for incoming connection... 
+_recieve_ack:0 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482962551 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+new connection from 169.254.144.1:49456.
+
+ remaining_capacity:64000 bytes_written:0 _next_seqno:1 _ack_seqno:1 _window_size:64240 _ack_seqno:1 _window_size:64240 amount_written:64000 remaining_capacity:64000 bytes_written:64000
+
+ remaining_capacity:64000 bytes_written:64000 _next_seqno:64001 _ack_seqno:1 _window_size:64240 _ack_seqno:1 _window_size:64240 amount_written:64000 remaining_capacity:240 bytes_written:128000
+
+_recieve_ack:1482964003 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+ remaining_capacity:1340 bytes_written:128000 _next_seqno:65341 _ack_seqno:1453 _window_size:63888 _ack_seqno:1453 _window_size:63888 amount_written:1340 remaining_capacity:0 bytes_written:129340
+
+_recieve_ack:1482965455 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482968359 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482969811 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482971263 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+ remaining_capacity:1452 bytes_written:129340 _next_seqno:66793 _ack_seqno:8713 _window_size:58080 _ack_seqno:8713 _window_size:58080 amount_written:1452 remaining_capacity:0 bytes_written:130792
+
+_recieve_ack:1482972715 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482974167 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482975619 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482977071 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+ remaining_capacity:1452 bytes_written:130792 _next_seqno:68245 _ack_seqno:14521 _window_size:53724 _ack_seqno:14521 _window_size:53724 amount_written:280 remaining_capacity:1172 bytes_written:131072
+
+_recieve_ack:1482979975 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+ remaining_capacity:1172 bytes_written:131072 _next_seqno:68245 _ack_seqno:17425 _window_size:50820 _ack_seqno:17425 _window_size:50820 amount_written:0 remaining_capacity:1172 bytes_written:131072
+DEBUG: Outbound stream to 169.254.144.1:49456 finished (50820 bytes still in flight).
+
+_recieve_ack:1482981427 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482982879 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482984331 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482985783 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:0 remaining_capacity:8192 ack:1061282952 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:536 remaining_capacity:7656 ack:1061283488 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:1072 remaining_capacity:7120 ack:1061284024 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:1608 remaining_capacity:7656 ack:1061284560 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:2144 remaining_capacity:7120 ack:1061285096 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:2680 remaining_capacity:7656 ack:1061285632 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:3216 remaining_capacity:7120 ack:1061286168 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:3752 remaining_capacity:7656 ack:1061286704 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:7120 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:4288 remaining_capacity:8192 ack:1061287240 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:9112 remaining_capacity:3368 ack:1061292064 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:9648 remaining_capacity:2832 ack:1061292600 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:10184 remaining_capacity:7656 ack:1061293136 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:10720 remaining_capacity:7120 ack:1061293672 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:11256 remaining_capacity:7656 ack:1061294208 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:11792 remaining_capacity:7120 ack:1061294744 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:12328 remaining_capacity:7656 ack:1061295280 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:12480 remaining_capacity:7504 ack:1061295432 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:12864 remaining_capacity:7808 ack:1061295816 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:13400 remaining_capacity:7272 ack:1061296352 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:13936 remaining_capacity:7656 ack:1061296888 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:14472 remaining_capacity:7120 ack:1061297424 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:15008 remaining_capacity:7656 ack:1061297960 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:15544 remaining_capacity:7120 ack:1061298496 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:16080 remaining_capacity:7656 ack:1061299032 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:16616 remaining_capacity:7120 ack:1061299568 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:17152 remaining_capacity:7656 ack:1061300104 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:17688 remaining_capacity:7120 ack:1061300640 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:18224 remaining_capacity:7656 ack:1061301176 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:18760 remaining_capacity:7120 ack:1061301712 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:7656 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19296 remaining_capacity:8192 ack:1061302248 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19832 remaining_capacity:7656 ack:1061302784 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:19832 remaining_capacity:7656 ack:1061302784 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:24656 remaining_capacity:3368 ack:1061307608 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:25192 remaining_capacity:2832 ack:1061308144 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:25728 remaining_capacity:7656 ack:1061308680 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:26264 remaining_capacity:7120 ack:1061309216 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:26800 remaining_capacity:7656 ack:1061309752 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:27336 remaining_capacity:7120 ack:1061310288 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:27872 remaining_capacity:7656 ack:1061310824 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:28408 remaining_capacity:7120 ack:1061311360 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:28944 remaining_capacity:7656 ack:1061311896 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:29480 remaining_capacity:7120 ack:1061312432 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30016 remaining_capacity:7656 ack:1061312968 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:7120 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:30552 remaining_capacity:8192 ack:1061313504 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:35376 remaining_capacity:3368 ack:1061318328 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:35912 remaining_capacity:2832 ack:1061318864 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:36448 remaining_capacity:7656 ack:1061319400 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:36984 remaining_capacity:7120 ack:1061319936 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:7656 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:8192 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:8192 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:8192 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:8192 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:37520 remaining_capacity:8192 ack:1061320472 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:40736 remaining_capacity:4976 ack:1061323688 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:41272 remaining_capacity:7656 ack:1061324224 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:41808 remaining_capacity:7120 ack:1061324760 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:42344 remaining_capacity:7656 ack:1061325296 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:42880 remaining_capacity:7120 ack:1061325832 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:43416 remaining_capacity:7656 ack:1061326368 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:43952 remaining_capacity:7120 ack:1061326904 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:44488 remaining_capacity:7656 ack:1061327440 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:45024 remaining_capacity:7120 ack:1061327976 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:45560 remaining_capacity:7656 ack:1061328512 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:46096 remaining_capacity:7120 ack:1061329048 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:46632 remaining_capacity:7656 ack:1061329584 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47168 remaining_capacity:7120 ack:1061330120 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:7656 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:8192 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:8192 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:8192 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:8192 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:47704 remaining_capacity:8192 ack:1061330656 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:48776 remaining_capacity:7120 ack:1061331728 _active:1
+
+_recieve_ack:1482990139 _receiver_bytes_written:48776 remaining_capacity:8192 ack:1061331728 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:48776 remaining_capacity:8192 ack:1061331728 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:50920 remaining_capacity:6048 ack:1061333872 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:52528 remaining_capacity:6584 ack:1061335480 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:52528 remaining_capacity:6584 ack:1061335480 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:52528 remaining_capacity:8192 ack:1061335480 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:53064 remaining_capacity:7656 ack:1061336016 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:53600 remaining_capacity:7120 ack:1061336552 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:54136 remaining_capacity:7656 ack:1061337088 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:54672 remaining_capacity:7120 ack:1061337624 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:55208 remaining_capacity:7656 ack:1061338160 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:55744 remaining_capacity:7120 ack:1061338696 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:56280 remaining_capacity:7656 ack:1061339232 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:56816 remaining_capacity:7120 ack:1061339768 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:57352 remaining_capacity:7656 ack:1061340304 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:57888 remaining_capacity:7120 ack:1061340840 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:58424 remaining_capacity:7656 ack:1061341376 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:58960 remaining_capacity:7120 ack:1061341912 _active:1
+
+_recieve_ack:1482994495 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:58960 remaining_capacity:8192 ack:1061341912 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:60032 remaining_capacity:7120 ack:1061342984 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:60032 remaining_capacity:8192 ack:1061342984 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:60032 remaining_capacity:8192 ack:1061342984 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:62176 remaining_capacity:6048 ack:1061345128 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:62712 remaining_capacity:7656 ack:1061345664 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:63248 remaining_capacity:7120 ack:1061346200 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:63784 remaining_capacity:7656 ack:1061346736 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:64320 remaining_capacity:7120 ack:1061347272 _active:1
+
+_recieve_ack:1483032247 _receiver_bytes_written:64320 remaining_capacity:8192 ack:1061347272 _active:1
+
+_recieve_ack:1483042411 _receiver_bytes_written:65392 remaining_capacity:7120 ack:1061348344 _active:1
+
+_recieve_ack:1483042411 _receiver_bytes_written:65928 remaining_capacity:7656 ack:1061348880 _active:1
+
+_recieve_ack:1483042411 _receiver_bytes_written:66464 remaining_capacity:7120 ack:1061349416 _active:1
+
+_recieve_ack:1483042411 _receiver_bytes_written:66464 remaining_capacity:8192 ack:1061349416 _active:1
+
+_recieve_ack:1483059835 _receiver_bytes_written:67536 remaining_capacity:7120 ack:1061350488 _active:1
+
+_recieve_ack:1483059835 _receiver_bytes_written:67536 remaining_capacity:8192 ack:1061350488 _active:1
+
+_recieve_ack:1483081615 _receiver_bytes_written:67536 remaining_capacity:8192 ack:1061350488 _active:1
+
+_recieve_ack:1483087423 _receiver_bytes_written:67536 remaining_capacity:8192 ack:1061350488 _active:1
+
+_recieve_ack:1483087423 _receiver_bytes_written:68608 remaining_capacity:7120 ack:1061351560 _active:1
+
+_recieve_ack:1483087423 _receiver_bytes_written:69144 remaining_capacity:7656 ack:1061352096 _active:1
+
+_recieve_ack:1483087423 _receiver_bytes_written:69144 remaining_capacity:8192 ack:1061352096 _active:1
+
+_recieve_ack:1483088875 _receiver_bytes_written:69144 remaining_capacity:8192 ack:1061352096 _active:1
+
+_recieve_ack:1483088875 _receiver_bytes_written:70216 remaining_capacity:7120 ack:1061353168 _active:1
+
+_recieve_ack:1483088875 _receiver_bytes_written:70752 remaining_capacity:7656 ack:1061353704 _active:1
+
+_recieve_ack:1483088875 _receiver_bytes_written:70752 remaining_capacity:8192 ack:1061353704 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:70752 remaining_capacity:8192 ack:1061353704 _active:1
+DEBUG: Outbound stream to 169.254.144.1:49456 has been fully acknowledged.
+
+_recieve_ack:1483093624 _receiver_bytes_written:71824 remaining_capacity:7120 ack:1061354776 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:72360 remaining_capacity:7656 ack:1061355312 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:72896 remaining_capacity:7120 ack:1061355848 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:73432 remaining_capacity:7656 ack:1061356384 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:73968 remaining_capacity:7120 ack:1061356920 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:73968 remaining_capacity:8192 ack:1061356920 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:75040 remaining_capacity:7120 ack:1061357992 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:75576 remaining_capacity:7656 ack:1061358528 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:76112 remaining_capacity:7120 ack:1061359064 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:76648 remaining_capacity:7656 ack:1061359600 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:77184 remaining_capacity:7120 ack:1061360136 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:77720 remaining_capacity:7656 ack:1061360672 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:78256 remaining_capacity:7120 ack:1061361208 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:78792 remaining_capacity:7656 ack:1061361744 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:78792 remaining_capacity:8192 ack:1061361744 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:79328 remaining_capacity:7656 ack:1061362280 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:79864 remaining_capacity:7120 ack:1061362816 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:80400 remaining_capacity:7656 ack:1061363352 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:80936 remaining_capacity:7656 ack:1061363888 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:81472 remaining_capacity:7120 ack:1061364424 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:82008 remaining_capacity:7656 ack:1061364960 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:82544 remaining_capacity:7120 ack:1061365496 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:83080 remaining_capacity:7656 ack:1061366032 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:83616 remaining_capacity:7120 ack:1061366568 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:84152 remaining_capacity:7656 ack:1061367104 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:84152 remaining_capacity:8192 ack:1061367104 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:85224 remaining_capacity:7120 ack:1061368176 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:85760 remaining_capacity:7656 ack:1061368712 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:86296 remaining_capacity:7120 ack:1061369248 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:86832 remaining_capacity:7656 ack:1061369784 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:86832 remaining_capacity:8192 ack:1061369784 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:87368 remaining_capacity:7656 ack:1061370320 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:87904 remaining_capacity:7120 ack:1061370856 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:88440 remaining_capacity:7656 ack:1061371392 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:88976 remaining_capacity:7120 ack:1061371928 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:89512 remaining_capacity:7656 ack:1061372464 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:90048 remaining_capacity:7120 ack:1061373000 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:90584 remaining_capacity:7656 ack:1061373536 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:91120 remaining_capacity:7120 ack:1061374072 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:91656 remaining_capacity:7656 ack:1061374608 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:92192 remaining_capacity:7120 ack:1061375144 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:92728 remaining_capacity:7656 ack:1061375680 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:93264 remaining_capacity:7120 ack:1061376216 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:93264 remaining_capacity:8192 ack:1061376216 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:94336 remaining_capacity:7120 ack:1061377288 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:94872 remaining_capacity:7656 ack:1061377824 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:95408 remaining_capacity:7120 ack:1061378360 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:95944 remaining_capacity:7656 ack:1061378896 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:96480 remaining_capacity:7120 ack:1061379432 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:97016 remaining_capacity:7656 ack:1061379968 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:97552 remaining_capacity:7120 ack:1061380504 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:98088 remaining_capacity:7656 ack:1061381040 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:98624 remaining_capacity:7656 ack:1061381576 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:99160 remaining_capacity:7120 ack:1061382112 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:99696 remaining_capacity:7656 ack:1061382648 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:100232 remaining_capacity:7120 ack:1061383184 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:100768 remaining_capacity:7656 ack:1061383720 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:101304 remaining_capacity:7120 ack:1061384256 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:101840 remaining_capacity:7656 ack:1061384792 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:101840 remaining_capacity:8192 ack:1061384792 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:101840 remaining_capacity:8192 ack:1061384792 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:101840 remaining_capacity:8192 ack:1061384792 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:103448 remaining_capacity:6584 ack:1061386400 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:103984 remaining_capacity:6048 ack:1061386936 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:104520 remaining_capacity:7656 ack:1061387472 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:105056 remaining_capacity:7120 ack:1061388008 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:105592 remaining_capacity:7656 ack:1061388544 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:106128 remaining_capacity:7120 ack:1061389080 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:106128 remaining_capacity:8192 ack:1061389080 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:107200 remaining_capacity:7120 ack:1061390152 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:107200 remaining_capacity:8192 ack:1061390152 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:108272 remaining_capacity:7120 ack:1061391224 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:108808 remaining_capacity:7656 ack:1061391760 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:109344 remaining_capacity:7120 ack:1061392296 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:109880 remaining_capacity:7656 ack:1061392832 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:110416 remaining_capacity:7120 ack:1061393368 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:110952 remaining_capacity:7656 ack:1061393904 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:111488 remaining_capacity:7656 ack:1061394440 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:111488 remaining_capacity:8192 ack:1061394440 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:111488 remaining_capacity:8192 ack:1061394440 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:111488 remaining_capacity:8192 ack:1061394440 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:113096 remaining_capacity:6584 ack:1061396048 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:113096 remaining_capacity:8192 ack:1061396048 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:114168 remaining_capacity:7120 ack:1061397120 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:114704 remaining_capacity:7656 ack:1061397656 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:115240 remaining_capacity:7120 ack:1061398192 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:115776 remaining_capacity:7656 ack:1061398728 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:116312 remaining_capacity:7120 ack:1061399264 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:116848 remaining_capacity:7656 ack:1061399800 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:117384 remaining_capacity:7656 ack:1061400336 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:117920 remaining_capacity:7120 ack:1061400872 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:118456 remaining_capacity:7656 ack:1061401408 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:118456 remaining_capacity:8192 ack:1061401408 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:119528 remaining_capacity:7120 ack:1061402480 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:119528 remaining_capacity:8192 ack:1061402480 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:120600 remaining_capacity:7120 ack:1061403552 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:121136 remaining_capacity:7656 ack:1061404088 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:121672 remaining_capacity:7120 ack:1061404624 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:121672 remaining_capacity:8192 ack:1061404624 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:122744 remaining_capacity:7120 ack:1061405696 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:122744 remaining_capacity:8192 ack:1061405696 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:123816 remaining_capacity:7120 ack:1061406768 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:124352 remaining_capacity:7656 ack:1061407304 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:124888 remaining_capacity:7120 ack:1061407840 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:125424 remaining_capacity:7656 ack:1061408376 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:125960 remaining_capacity:7120 ack:1061408912 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:126496 remaining_capacity:7656 ack:1061409448 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:127032 remaining_capacity:7120 ack:1061409984 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:127568 remaining_capacity:7656 ack:1061410520 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:128104 remaining_capacity:7120 ack:1061411056 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:128640 remaining_capacity:7656 ack:1061411592 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:129176 remaining_capacity:7120 ack:1061412128 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:129712 remaining_capacity:7656 ack:1061412664 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:130248 remaining_capacity:7120 ack:1061413200 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:130784 remaining_capacity:7656 ack:1061413736 _active:1
+
+_recieve_ack:1483093624 _receiver_bytes_written:131072 remaining_capacity:7368 ack:1061414025 _active:1
+DEBUG: Inbound stream from 169.254.144.1:49456 finished cleanly.
+DEBUG: Waiting for lingering segments (e.g. retransmissions of FIN) from peer...
+DEBUG: Waiting for clean shutdown... DEBUG: TCP connection finished cleanly.
+done.
