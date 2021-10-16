@@ -9,47 +9,44 @@
 #include <functional>
 #include <queue>
 
-
 class Timer {
   private:
     unsigned int _rto;
     size_t _ticks;
     bool _start;
+
   public:
     Timer(unsigned int _initial_retransmission_timeout)
-      :_rto(_initial_retransmission_timeout)
-      , _ticks(0)
-      , _start(false) {}
+        : _rto(_initial_retransmission_timeout), _ticks(0), _start(false) {}
 
-    void increase(const size_t ms_since_last_tick) {_ticks += ms_since_last_tick;}
+    void increase(const size_t ms_since_last_tick) { _ticks += ms_since_last_tick; }
 
     void start() {
-      _start = true;
-      _ticks = 0;
+        _start = true;
+        _ticks = 0;
     }
 
     void close() {
-      _start = false;
-      _ticks = 0;
+        _start = false;
+        _ticks = 0;
     }
 
-    void restart() {_ticks = 0;}
+    void restart() { _ticks = 0; }
 
-    bool is_started() {return _start;}
+    bool is_started() { return _start; }
 
-    bool is_expired() {return _ticks >= _rto;}
+    bool is_expired() { return _ticks >= _rto; }
 
     unsigned int &rto() { return _rto; }
 
-    unsigned int ticks() {return _ticks;}
+    unsigned int ticks() { return _ticks; }
 };
 
 struct OutstandingSegment {
-  TCPSegment seg;
-  uint64_t biggest_absolute_seqno;
-  OutstandingSegment(): seg(), biggest_absolute_seqno(0) {}
+    TCPSegment seg;
+    uint64_t biggest_absolute_seqno;
+    OutstandingSegment() : seg(), biggest_absolute_seqno(0) {}
 };
-
 
 //! \brief The "sender" part of a TCP implementation.
 
@@ -91,7 +88,7 @@ class TCPSender {
 
     //! 计时器
     Timer _timer;
-  
+
     //! 是否发出过带有 syn 的 TCPSegment，发出过就不用再发了（顶多重传）
     bool _syn_sent{false};
 

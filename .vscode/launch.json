@@ -16,7 +16,7 @@
             "name": "g++-8 - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/apps/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/build/tests/${fileBasenameNoExtension}",
             "args": ["-t", "12", "-w", "32768", "-l", "169.254.144.1", "14887"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

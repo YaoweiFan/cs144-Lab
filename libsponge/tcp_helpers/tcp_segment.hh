@@ -22,7 +22,7 @@ class TCPSegment {
     //! \name Accessors
     //!@{
     const TCPHeader &header() const { return _header; }
-    TCPHeader &header() { return _header; } // 这两个优先调用哪一个？
+    TCPHeader &header() { return _header; }  // 这两个优先调用哪一个？
 
     const Buffer &payload() const { return _payload; }
     Buffer &payload() { return _payload; }

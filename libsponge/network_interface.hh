@@ -5,8 +5,11 @@
 #include "tcp_over_ip.hh"
 #include "tun.hh"
 
+#include <map>
 #include <optional>
 #include <queue>
+#include <utility>
+#include <vector>
 
 //! \brief A "network interface" that connects IP (the internet layer, or network layer)
 //! with Ethernet (the network access layer, or link layer).
@@ -39,6 +42,26 @@ class NetworkInterface {
 
     //! outbound queue of Ethernet frames that the NetworkInterface wants sent
     std::queue<EthernetFrame> _frames_out{};
+
+    // 因为找不到目的 mac 地址而暂时保留的 ip frame
+    std::vector<std::pair<InternetDatagram, uint32_t>> _ip_frame_wait{};
+
+    // key: ip
+    // value: 与 ip 地址对应的 mac 地址 && 该映射的保存时间
+    std::map<uint32_t, std::pair<EthernetAddress, size_t>> _ip_mac_map{};
+
+    // key: ip
+    // value: 与 ip 地址对应的 arp request 发送时间
+    std::map<uint32_t, size_t> _arp_time_map{};
+
+    // 能否发送目的 ip 地址为 next_hop_ip 的 ARP
+    bool _arp_can_send(const uint32_t next_hop_ip);
+
+    // 常量，下一个相同 ARP 发送需要等待的时间，单位 ms
+    static constexpr size_t ARP_RETRANSMISSION_TIME = 5000;
+
+    // 常量，某一 ip mac 映射保留的时间，单位 ms
+    static constexpr size_t ip_mac_map_maintain_time = 30000;
 
   public:
     //! \brief Construct a network interface with given Ethernet (network-access-layer) and IP (internet-layer) addresses
