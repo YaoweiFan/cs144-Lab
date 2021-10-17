@@ -1,3 +1,15 @@
+## yaowei's notes 
+lab0: passed   
+lab1: passed   
+lab2: passed   
+lab3: passed   
+lab4: passed   
+lab5: passed   
+lab6: passed   
+lab7: failed  
+feeling: the most difficult part is lab4    
+
+----------------------------------------------------------
 For build prereqs, see [the CS144 VM setup instructions](https://web.stanford.edu/class/cs144/vm_howto).
 
 ## Sponge quickstart
